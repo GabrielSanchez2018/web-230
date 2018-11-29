@@ -4,4 +4,4 @@ Introduction to JavaScript
 Professor Krasso - Bellevue University
 WEB 230 - Introduction to JavaScript-Krasso Page 2
 Professor Krasso - Bellevue University 
-Gabriel Sanchez - Bellevue University
+Gabriel Sanchez Serna- Bellevue University
