@@ -1,6 +1,6 @@
 /*
 
-Title: gabriel-assignment-1.4.js
+Title: sanchez-assignment-1.4.js
 Date: 11/29/2018
 Author: Gabriel Sanchez
 Modified by: ----
