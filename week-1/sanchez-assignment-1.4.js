@@ -22,9 +22,16 @@ Description: Assignment 1.4
 */
 
 // Variable declaration and assignment goes here..
-var firstName = "FirstName";
+var firstName = "Gabriel";
+var lastName = "Sanchez";
+var age = "27 years old";
+var street = "4821 O st";
+var city = "Omaha";
+var state = "Nebraska";
+var zipCode = "68117";
 
 // output
-console.log('\n');
+console.log(firstName,'\n',lastName,'\n', age,'\n', street, '\n', city, '\n',
+state, '\n', zipCode);
 
 // end program
