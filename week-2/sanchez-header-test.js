@@ -5,6 +5,7 @@
 ; Date:   05 Dec 2018
 ; Modified By: Gabriel Sanchez 
 ; Description: Displays a formatted header
+; Assignment: 2.2
 ;===========================================
 */
 
@@ -17,4 +18,4 @@
 
 var header = require('../sanchez-header.js');
 
-console.log(header.display('Gabriel','Sanchez','assignment 2.1'));
+console.log(header.display('Gabriel','Sanchez','assignment 2.2'));
