@@ -1,2 +1,0 @@
-
-function convertToInt(hello)
