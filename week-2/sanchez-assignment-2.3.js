@@ -1,16 +1,16 @@
 /*
 
-Title: sanchez-assignment-2.2.js
+Title: sanchez-assignment-2.3.js
 Date: 11/29/2018
 Author: Profesor Krasso
 Modified by: Gabriel Sanchez
-Description: Assignment 2.2
+Description: Assignment 2.3
 */
 
 
 /* header */
 var header = require ('../sanchez-header.js');
-console.log(header.display('Gabriel', 'Sanchez', 'assignment 2.2'));
+console.log(header.display('Gabriel', 'Sanchez', 'assignment 2.3'));
 
 // Code here..
 // Create a function with myName, with 0 parameters and empty body
