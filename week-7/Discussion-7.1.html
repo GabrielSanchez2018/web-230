@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+	<title>Million Facts</title>
+</head>
+<body>
+	<h1>What Plannet do we live in?</h1>
+	<div id="wrapper">
+		<p id="demo"></p>
+		<script>
+
+		function earth()
+		{
+		  var y1= document.getElementById('plannet').value;
+		  
+		  
+		  if (y1 == "Earth" || "earth") {
+		   alert =("Correct")
+		  }
+		  else {
+		      alert = ("Try Again")
+		      }
+		  
+		  var oper = document.getElementById('plannet').value= alert;
+		}
+
+		</script>
+		<div>
+			Give me your best answer
+			<input id="plannet" maxlength="30" size="11" type="text"> <button onclick="earth()">Enter</button> 
+		</div>
+	</div>
+	<footer id="footer">
+	</footer>
+</body>
+</html>

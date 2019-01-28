@@ -1,0 +1,69 @@
+<!-- 
+Title: sanchez-assignment-7.3.html
+Date: 1/25/2019
+Author: Profesor Krasso
+Modified by: Gabriel Sanchez
+Description: Client-Side JavaScript 
+*/
+
+/* header */
+var header = require ('../sanchez-header.js');
+console.log(header.display('Gabriel', 'Sanchez', 'Assignment 7.3'));
+console.log('\n');
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.3</title>
+  
+  
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" type="text/css" href="site.css">
+</head>
+<body>
+<div id="list">
+  <h1>SHOPPING LIST v.1</h1>
+  <script>
+    document.write("<ol>1. Oranges</ol>")
+    document.write("<ol>2. Apples </ol>")
+    document.write("<ol>3. Pears </ol>")
+    document.write("<ol>4. Limes </ol> ")
+    document.write("<ol>5. Lemons </ol>")
+  </script>
+</div>
+<!--Recreating the list with innerHTML-->
+<div id="todo"></div>
+<script>
+  document.getElementById('todo').innerHTML = "<h1> SHOPPING LIST v.2 </h1>" +
+  "<table>" +
+
+  "<tr>" +
+  "<th>Id</th>" +
+  "<th>Item</th>" +
+  "</tr>" +
+  "<tr>" +
+  "<td> 1 </td>" +
+  "<td> Orages </td>" +
+  "</tr>" +
+  "<tr>" +
+  "<td> 2 </td>" +
+  "<td> Apples </td>" +
+  "</tr>"+
+  "<tr>" +
+  "<td> 3 </td>" +
+  "<td>Pears </td>" +
+  "</tr>"+
+  "<tr>" +
+  "<td> 4 </td>" +
+  "<td> Limes </td>" +
+  "</tr>"+
+  "<tr>" +
+  "<td> 5 </td>" +
+  "<td> Lemons </td>" +
+  "</tr>"+
+  "</table>"
+</script>
+</body>
+</html>
