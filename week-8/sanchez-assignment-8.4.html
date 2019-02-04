@@ -1,0 +1,68 @@
+<!-- 
+Title: sanchez-assignment-8.3.html
+Date: 2/2/2019
+Author: Profesor Krasso
+Modified by: Gabriel Sanchez
+Description: Putting all togetherntsd
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 8.4</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="site.css">
+
+  <style type="text/css">
+      tbody tr:hover {
+      cursor: pointer;
+      background-color: #ffff99;
+    }
+  </style>
+</head>
+<body>
+
+<div id="emps">
+
+<script>
+    function employee(id, firstName, lastName, title){
+	this.id = id;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.title = title;
+}
+var employees = [
+	new employee("1", "Thomas", "Edison", "Software Engineer"),
+    new employee("2", "Benjamin", "Franklin", "Programmer"),
+    new employee("3", "Nikola", "Tesla", "Project Manajer"),
+    new employee("4", "Charles", "Babbage", "Product Manager"),
+    new employee("5", "Alexander", "Bell", "Businees Analyst"),
+];
+
+employees.forEach(function(i, index){
+    console.log((index +1),i.id, i.firstName, i.lastName, i.title)
+});
+// HTML table
+var output = "<h1>Employee Listing</h1><table><tr><th>Id</th><th> First Name</th><th>Last Name</th><th>Title</th></tr>";
+    for (var x = 0; x < employees.length; x++){
+        output += "<tr>" + "<td>" + employees[x].id + " </td> " + "<td>" + employees[x].firstName + "</td> "+"<td>" + employees[x].lastName + "</td> "  +"<td>" + employees[x].title + "</td>" + "</tr>";
+    }
+    output += "</table>";
+    document.getElementById("emps").innerHTML = output;
+
+  // jQuery onClick event
+  // Don't remove this, just add your code to the body of the event (curly braces)
+  
+  $(function () {
+    $("table tr").click(function (event) {
+        var employeeId = $(this).text();
+        alert(employeeId );
+    });
+  });
+</script>
+</div>
+</body>
+</html>

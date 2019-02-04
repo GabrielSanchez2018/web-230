@@ -1,0 +1,55 @@
+/*
+============================================
+; Title:  site.css
+; Author: Professor Krasso
+; Date:   25 June 2017
+; Description: Global styling for week's 7 through 9
+; Edited: By Gabriel Sanchez 
+;===========================================
+*/
+html{
+  font-family: 'Roboto', sans-serif;
+  
+}
+/*top bar from week-8 */
+.topbar{
+  background-color: lightblue;
+  margin-top:20px;
+}
+p, h1, button, .topbar {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  margin-left: 20px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+
+th {
+  background-color: steelblue;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: lightsteelblue;
+}
+/* 8.4 Assignmeent hover*/
+  tbody tr:hover {
+  cursor: pointer;
+  background-color: #ffff99;
+}
+
+/* ul from 8.2 */
+ul{
+  color:black;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}

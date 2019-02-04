@@ -1,0 +1,81 @@
+<!-- 
+Title: sanchez-assignment-8.3.html
+Date: 2/2/2019
+Author: Profesor Krasso
+Modified by: Gabriel Sanchez
+Description: jQuery 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.3</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../jquery-3.3.1.min.js"></script>
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="site.css">
+
+</head>
+<body>
+<!--This is the top bar-->
+<div class="topbar">jQuery</div>
+<!--Toggle function, hides and brings back the paragraph on a click-->
+<script>
+    $(function(){
+        $('button').click(function(){
+            $("p").toggle('5');
+        });
+    });
+</script>
+<h1>Lorem ipsum</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet tellus velit.
+    Duis laoreet eros eu mi venenatis, a auctor ex luctus. Nulla sed diam egestas, pharetra eros eget, finibus urna.
+    Vestibulum imperdiet scelerisque imperdiet. Mauris varius tellus nec ante ultrices, at sollicitudin mauris interdum.
+    Mauris rutrum enim arcu, nec gravida nisi fringilla non. Donec dapibus nibh est, sit amet varius nisl porttitor in.
+    Nunc quis nunc condimentum, pretium mauris in, consectetur enim. In eget lacus rutrum, mollis odio et, viverra arcu. 
+    Curabitur faucibus quam sit amet nibh laoreet, ac tincidunt mi rhoncus. Morbi lobortis mollis ultricies.
+    Mauris quis augue dui. Nulla pulvinar varius nibh. Donec eget gravida lectus, et luctus justo. 
+
+</p>
+<!--Button fucntion-->
+<button type="button">Toggle</button> 
+
+<!--Table-->
+<table>
+    <tr>
+        <td><a href="#" class="id">1</a></td>
+        <td>Orange</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="id">2</a></td>
+        <td>Apple</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="id">3</a></td>
+        <td>Kiwi</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="id">4</a></td>
+        <td>Pineapple</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="id">5</a></td>
+        <td>Banana</td>
+    </tr>
+</table>
+<!--
+This function works thru a windows alert, when you click on the item,
+information about the id and type appears.
+-->
+<script>
+    $(".id").click(function (event){
+        event.preventDefault();
+        var fruitId = $(this).text();
+        var fruitType = $(this).closest('td').next().text();
+        alert("ID: " + fruitId + " Type: "+ fruitType)
+    });
+</script>
+</body>
+</html>

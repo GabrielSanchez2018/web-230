@@ -1,0 +1,33 @@
+/*
+============================================
+; Title:  site.css
+; Author: Professor Krasso
+; Date:   25 June 2017
+; Description: Global styling for week's 7 through 9
+; Edited: By Gabriel Sanchez 
+;===========================================
+*/
+html{
+    background: white;
+    font-family: 'Roboto', sans-serif;
+}
+.topbar{
+    background: green;
+    text-align: center;
+}
+.fruits{
+    text-align: center;
+    width: 100px;
+    height: auto;
+
+}
+h2{
+    color:black;
+    text-align: center;
+}
+ul{
+    color:black;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
